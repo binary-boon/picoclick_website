@@ -1,0 +1,145 @@
+.outerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7F8FA;
+    color: black;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .outerContainer {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+        padding: 60px 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .outerContainer {
+        padding: 80px 60px;
+    }
+}
+
+.KhaturiaInfo h1{
+    font-family: 'Moniqa-Heading', serif;   
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+    .imageContainer {
+        margin-bottom: 0;
+        margin-right: 40px;
+        max-width: 50%;
+        flex-shrink: 0;
+    }
+
+    .imageContainer img {
+        max-width: 600px;
+    }
+
+    .KhaturiaInfo h2{
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .imageContainer {
+        margin-right: 60px;
+    }
+
+    .imageContainer img {
+        max-width: 720px;
+    }
+}
+
+.KhaturiaInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+    text-align: center;
+    font-family: 'Moniqa-Paragraph', serif;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .KhaturiaInfo {
+        text-align: left;
+        padding: 0;
+        max-width: 50%;
+    }
+}
+
+.KhaturiaHeading {
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.KhaturiaInfo h2 {
+    font-size: clamp(1rem, 2.5vw, 1.6rem);
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: 0.05rem;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .KhaturiaInfo h2 {
+        letter-spacing: 0.09rem;
+    }
+}
+
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 12px 30px;
+    font-family: 'Moniqa-Heading', serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    margin-top: 5%;
+    font-weight: bold;
+    align-self: center;
+}
+
+@media (min-width: 768px) {
+    .button {
+        align-self: flex-start;
+    }
+}
+
+.button:hover {
+    background-color: #F0E9DF;
+    color: #3c211e;
+    border-color: #3c211e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

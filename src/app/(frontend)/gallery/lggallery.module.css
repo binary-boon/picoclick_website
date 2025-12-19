@@ -1,0 +1,9 @@
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery.css');
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-zoom.css');
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-share.css');
+
+
+.galleryCont{
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(150px ,1fr));
+}
