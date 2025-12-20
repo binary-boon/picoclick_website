@@ -49,14 +49,14 @@ const ScrollCard = ({
         }}
         className="flex flex-col relative w-full max-w-[95vw] sm:max-w-[90vw] lg:max-w-[1000px] rounded-2xl sm:rounded-[25px] p-6 sm:p-8 lg:p-12 origin-top min-h-[500px] sm:h-auto lg:h-[500px] bg-opacity-100"
       >
-        <h2 className="text-center m-0 text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 lg:mb-0">
+        <h2 className="text-center m-0 text-2xl sm:text-3xl lg:text-4xl font-heading mb-4 sm:mb-6 lg:mb-0">
           {title}
         </h2>
         
         <div className="flex flex-col lg:flex-row h-full mt-6 sm:mt-8 lg:mt-12 gap-6 sm:gap-8 lg:gap-12">
           {/* Description Section */}
           <div className="w-full lg:w-[40%] relative lg:top-[10%] order-2 lg:order-1">
-            <p className="text-sm sm:text-base lg:text-base leading-relaxed mb-4">
+            <p className="text-sm sm:text-base lg:text-base leading-relaxed mb-4 font-sans">
               {description}
             </p>
             <span className="flex items-center gap-2 mt-4">
@@ -64,7 +64,7 @@ const ScrollCard = ({
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs sm:text-sm underline cursor-pointer hover:opacity-70 transition-opacity"
+                className="text-xs sm:text-sm font-sans underline cursor-pointer hover:opacity-70 transition-opacity"
               >
                 See more
               </a>

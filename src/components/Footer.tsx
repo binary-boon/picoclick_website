@@ -77,10 +77,10 @@ export default function Footer() {
                     <Camera className="w-6 h-6 text-white" strokeWidth={1.5} />
                   </div>
                   <div>
-                    <span className="block text-2xl font-sans font-light text-white group-hover:text-rose-400 transition-colors">
+                    <span className="block text-2xl font-heading text-white group-hover:text-rose-400 transition-colors">
                       PicoClick
                     </span>
-                    <span className="block text-xs tracking-[0.2em] text-stone-400 uppercase">
+                    <span className="block text-xs font-sans tracking-[0.2em] text-stone-400 uppercase">
                       Photography
                     </span>
                   </div>
@@ -88,7 +88,7 @@ export default function Footer() {
               </div>
 
               {/* Tagline */}
-              <p className="text-stone-400 font-light leading-relaxed mb-8 max-w-sm">
+              <p className="text-stone-400 font-sans font-light leading-relaxed mb-8 max-w-sm">
                 Capturing timeless moments and crafting love stories through the art of photography. 
                 Every frame, a cherished memory.
               </p>
@@ -129,7 +129,7 @@ export default function Footer() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.8, delay: sectionIndex * 0.1 }}
                 >
-                  <h3 className="text-white font-medium mb-6 text-sm tracking-wider uppercase">
+                  <h3 className="text-white font-sans font-medium mb-6 text-sm tracking-wider uppercase">
                     {section.title}
                   </h3>
                   <ul className="space-y-3">
@@ -137,7 +137,7 @@ export default function Footer() {
                       <li key={link.label}>
                         <a
                           href={link.href}
-                          className="text-stone-400 hover:text-rose-400 transition-colors duration-300 font-light text-sm inline-block hover:translate-x-1 transform transition-transform"
+                          className="text-stone-400 font-sans hover:text-rose-400 transition-colors duration-300 font-light text-sm inline-block hover:translate-x-1 transform transition-transform"
                         >
                           {link.label}
                         </a>
@@ -156,7 +156,7 @@ export default function Footer() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="lg:col-span-3"
             >
-              <h3 className="text-white font-medium mb-6 text-sm tracking-wider uppercase">
+              <h3 className="text-white font-sans font-medium mb-6 text-sm tracking-wider uppercase">
                 Get in Touch
               </h3>
               <div className="space-y-4">
@@ -183,7 +183,7 @@ export default function Footer() {
                     className="flex items-start gap-3 group hover:translate-x-1 transition-transform duration-300"
                   >
                     <contact.icon className="w-5 h-5 text-rose-400 mt-0.5 flex-shrink-0" strokeWidth={1.5} />
-                    <span className="text-stone-400 group-hover:text-white transition-colors text-sm font-light">
+                    <span className="text-stone-400 font-sans group-hover:text-white transition-colors text-sm font-light">
                       {contact.label}
                     </span>
                   </a>
@@ -225,13 +225,13 @@ export default function Footer() {
             className="mt-16 pt-8 border-t border-stone-800"
           >
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-              <p className="text-stone-500 text-sm font-light">
+              <p className="text-stone-500 font-sans text-sm font-light">
                 © {currentYear} PicoClick Photography. All rights reserved.
               </p>
               <div className="flex items-center gap-2 text-stone-500 text-sm">
-                <span className="font-light">Crafted with</span>
+                <span className="font-sans font-light">Crafted with</span>
                 <Heart className="w-4 h-4 text-rose-500 fill-rose-500 animate-pulse" />
-                <span className="font-light">for couples in love</span>
+                <span className="font-sans font-light">for couples in love</span>
               </div>
             </div>
           </motion.div>

@@ -90,6 +90,12 @@
   }
   body {
     @apply bg-background text-foreground min-h-[100vh] flex flex-col;
+    font-family: var(--font-dm-sans), sans-serif;
+  }
+  
+  /* Apply Made Saonara to all headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-made-saonara), sans-serif;
   }
 }
 

@@ -146,10 +146,10 @@ export default function HomeAboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-sans font-light text-stone-900 mb-6 leading-tight"
+              className="text-4xl md:text-5xl lg:text-6xl font-heading text-stone-900 mb-6 leading-tight"
             >
               Capturing Love Stories
-              <span className="block text-rose-600 italic font-normal mt-2">
+              <span className="block text-rose-600 italic font-normal mt-2 font-heading">
                 Since 2013
               </span>
             </motion.h2>
@@ -160,16 +160,16 @@ export default function HomeAboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="space-y-4 text-stone-600 text-lg leading-relaxed mb-8"
+              className="space-y-4 text-stone-600 text-lg leading-relaxed mb-8 font-sans"
             >
               <p>
-                For over a decade, <span className="font-medium text-stone-900">PicoClick Photography</span> has 
+                For over a decade, <span className="font-heading text-stone-900">PicoClick Weddings</span> has 
                 been trusted to preserve the most precious moments of life's greatest celebrations. Founded by 
-                Arjun and Priya Mehta, our journey began with a simple belief: every love story deserves to be 
+                Mukesh & Devendra Teli, our journey began with a simple belief: every love story deserves to be 
                 told beautifully.
               </p>
               <p>
-                With over 500 weddings captured across India and beyond, we've refined our craft while staying 
+                With over 200+ weddings captured across India and beyond, we've refined our craft while staying 
                 true to our core philosophy—<span className="font-medium text-stone-900">let love lead the lens</span>. 
                 From intimate gatherings to grand destination weddings, we bring authenticity, artistry, and 
                 attention to every frame.
@@ -185,9 +185,9 @@ export default function HomeAboutSection() {
               className="grid grid-cols-2 gap-6 mb-10"
             >
               {[
-                { icon: Heart, label: "500+ Weddings" },
-                { icon: Award, label: "25+ Awards" },
-                { icon: Camera, label: "12 Team Members" },
+                { icon: Heart, label: "200+ Weddings" },
+                { icon: Award, label: "30+ Destinations" },
+                { icon: Camera, label: "28 Team Members" },
                 { icon: Sparkles, label: "4.9 Rating" },
               ].map((item, index) => (
                 <motion.div

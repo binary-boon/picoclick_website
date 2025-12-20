@@ -21,8 +21,8 @@ interface ScrollCardsContainerProps {
 
 const ScrollCardsContainer = ({ 
   projects, 
-  sectionTitle = 'Your love story, filmed like a movie.' ,
-  sectionSubtitle = 'Every wedding tells a unique story. We capture yours with artistry, emotion, and precision—so your memories live far beyond the day itself.'
+  sectionTitle  ,
+  sectionSubtitle 
 }: ScrollCardsContainerProps) => {
   const sectionRef = useRef(null)
   const [isMobile, setIsMobile] = useState(false)
@@ -75,12 +75,12 @@ const ScrollCardsContainer = ({
       <div className="sticky top-0 left-0 w-full z-0 pt-20 sm:pt-24 lg:pt-32 pb-8 sm:pb-12 lg:pb-16 bg-background">
         <motion.h2 
           style={{ opacity: titleOpacity }}
-          className="text-5xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-bold text-center px-4"
+          className="text-2xl sm:text-2xl md:text-3xlxl lg:text-4xl xl:text-5xl font-heading text-center px-4"
         >
           {sectionTitle}
         </motion.h2>
-
-        <motion.p className="text-5xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-5xl font-bold text-center px-4">{sectionSubtitle}</motion.p>
+        
+        <motion.p className="text-lg sm:text-xl md:text-xl lg:text-xl xl:text-2xl font-sans text-center px-4 text-center px-60 mt-4">{sectionSubtitle}</motion.p>
       </div>
 
       {/* Cards Container - positioned relative with higher z-index */}

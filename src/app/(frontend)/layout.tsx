@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
+import localFont from 'next/font/local'
 
 import { cn } from '@/utilities/ui'
-import { GeistMono } from 'geist/font/mono'
-import { GeistSans } from 'geist/font/sans'
 import React from 'react'
 
 import { AdminBar } from '@/components/AdminBar'
@@ -16,11 +15,57 @@ import { draftMode } from 'next/headers'
 import './globals.css'
 import { getServerSideURL } from '@/utilities/getURL'
 
+// Load Made Saonara font for headings
+// Path is relative to src/app/(frontend)/layout.tsx -> needs to go up 3 levels
+const madeSaonara = localFont({
+  src: [
+    {
+      path: '../../../public/fonts/MADE-SAONARA.otf',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-made-saonara',
+  display: 'swap',
+})
+
+// Load DM Sans font for body text
+const dmSans = localFont({
+  src: [
+    {
+      path: '../../../public/fonts/DMSans-Light.ttf',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: '../../../public/fonts/DMSans-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../../public/fonts/DMSans-Medium.ttf',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../../../public/fonts/DMSans-Bold.ttf',
+      weight: '700',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-dm-sans',
+  display: 'swap',
+})
+
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const { isEnabled } = await draftMode()
 
   return (
-    <html className={cn(GeistSans.variable, GeistMono.variable)} lang="en" suppressHydrationWarning>
+    <html 
+      className={cn(dmSans.variable, madeSaonara.variable)} 
+      lang="en" 
+      suppressHydrationWarning
+    >
       <head>
         <InitTheme />
         <link href="/favicon.ico" rel="icon" sizes="32x32" />

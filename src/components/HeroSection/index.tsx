@@ -77,7 +77,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ muxPlaybackId, title, 
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <h1 className="mb-6 text-5xl font-bold text-white md:text-7xl lg:text-8xl">
+          {/* Using font-heading class for Made Saonara */}
+          <h1 className="mb-6 text-5xl font-heading text-white md:text-7xl lg:text-8xl font-normal">
             {title}
           </h1>
         </motion.div>
@@ -88,7 +89,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ muxPlaybackId, title, 
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <p className="max-w-3xl text-lg text-white/90 md:text-xl lg:text-2xl">
+          {/* Using font-sans class for DM Sans (this is default, but being explicit) */}
+          <p className="max-w-3xl text-lg font-sans text-white/90 md:text-xl lg:text-2xl">
             {subtitle}
           </p>
         </motion.div>
@@ -106,7 +108,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ muxPlaybackId, title, 
             transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
             className="flex flex-col items-center gap-2"
           >
-            <span className="text-sm text-white/70">Scroll to explore</span>
+            <span className="text-sm font-sans text-white/70">Scroll to explore</span>
             <svg
               className="h-6 w-6 text-white/70"
               fill="none"

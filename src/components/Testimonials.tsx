@@ -173,11 +173,11 @@ export default function Testimonials() {
             <span className="inline-block text-rose-600 font-sans text-sm tracking-[0.3em] uppercase mb-4">
               Kind Words
             </span>
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-sans font-light text-stone-900 mb-6">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-heading text-stone-900 mb-6">
               Love Stories
-              <span className="block text-rose-600 italic font-normal mt-2">Shared</span>
+              <span className="block text-rose-600 font-heading italic font-normal mt-2">Shared</span>
             </h2>
-            <p className="text-stone-600 text-lg md:text-xl max-w-2xl mx-auto font-light">
+            <p className="text-stone-600 font-sans text-lg md:text-xl max-w-2xl mx-auto font-light">
               Every couple has a unique story, and we're honored to be part of these beautiful journeys
             </p>
           </motion.div>
@@ -204,26 +204,26 @@ export default function Testimonials() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-rose-100 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 
                 {/* Quote mark */}
-                <div className="text-rose-300 text-6xl font-sans font-light leading-none mb-4 opacity-30">
+                <div className="text-rose-300 text-6xl font-heading leading-none mb-4 opacity-30">
                   "
                 </div>
 
                 {/* Content */}
-                <blockquote className="text-stone-700 text-base leading-relaxed mb-6 font-light relative z-10">
+                <blockquote className="text-stone-700 font-sans text-base leading-relaxed mb-6 font-light relative z-10">
                   {testimonial.content}
                 </blockquote>
 
                 {/* Author info */}
                 <div className="relative z-10">
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-rose-400 to-amber-400 flex items-center justify-center text-white font-sans text-lg">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-rose-400 to-amber-400 flex items-center justify-center text-white font-heading text-lg">
                       {testimonial.name.charAt(0)}
                     </div>
                     <div>
-                      <p className="text-stone-900 font-medium">
+                      <p className="text-stone-900 font-sans font-medium">
                         {testimonial.name}
                       </p>
-                      <p className="text-stone-500 text-sm font-light">
+                      <p className="text-stone-500 font-sans text-sm font-light">
                         {testimonial.role}
                       </p>
                     </div>
@@ -245,14 +245,14 @@ export default function Testimonials() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-center mt-20"
         >
-          <p className="text-stone-600 text-lg mb-6 font-light">
+          <p className="text-stone-600 font-sans text-lg mb-6 font-light">
             Ready to create your own beautiful story?
           </p>
           <motion.a
             href="/contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-block px-10 py-4 bg-gradient-to-r from-rose-600 to-rose-500 text-white rounded-full font-medium tracking-wide hover:shadow-2xl hover:shadow-rose-500/30 transition-all duration-300"
+            className="inline-block px-10 py-4 bg-gradient-to-r from-rose-600 to-rose-500 text-white rounded-full font-sans font-medium tracking-wide hover:shadow-2xl hover:shadow-rose-500/30 transition-all duration-300"
           >
             Let's Talk
           </motion.a>

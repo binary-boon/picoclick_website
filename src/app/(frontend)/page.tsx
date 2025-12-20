@@ -68,7 +68,7 @@ export default async function HomePage() {
         subtitle={heroConfig.subtitle}
       />
       <HomeAboutSection />
-       <ScrollCardsContainer projects={projects} sectionTitle="Services" />
+       <ScrollCardsContainer projects={projects} sectionTitle="Your love story, filmed like a movie." sectionSubtitle = "Every wedding tells a unique story. We capture yours with artistry, emotion, and precision—so your memories live far beyond the day itself." />
        <Parallaxgallery/>
        {/* Component 2: Perspective Transition */}
       <PerspectiveTransition 
