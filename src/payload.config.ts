@@ -11,7 +11,8 @@ import { Media } from './collections/Media'
 import { Pages } from './collections/Pages'
 import { Posts } from './collections/Posts'
 import { Users } from './collections/Users'
-import { Footer } from './Footer/config'
+// Removed Footer global import - using custom Footer component instead
+// import { Footer } from './Footer/config'
 // import { Header } from './Header2/config'
 import { plugins } from './plugins'
 import { defaultLexical } from '@/fields/defaultLexical'
@@ -64,7 +65,7 @@ export default buildConfig({
   }),
   collections: [Pages, Posts, Media, Categories, Users],
   cors: [getServerSideURL()].filter(Boolean),
-  globals: [Footer],
+  globals: [], // Removed Footer from globals - using custom component
   plugins: [
     ...plugins,
     // storage-adapter-placeholder
