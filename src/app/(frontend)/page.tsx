@@ -1,6 +1,5 @@
 import React from 'react'
 import { HeroSection } from '@/components/HeroSection'
-import { RenderBlocks } from '@/blocks/RenderBlocks'
 import { generateMeta } from '@/utilities/generateMeta'
 import configPromise from '@payload-config'
 import { getPayload } from 'payload'
@@ -8,13 +7,13 @@ import { draftMode } from 'next/headers'
 import NextImage from 'next/image';
 import ScrollCardsContainer from '@/components/ScrollCards/ScrollCardsContainer'
 import { projects } from '../data/Projects'
-import ParallaxGallery from '@/components/ParallaxGallery/ParallaxGallery'
+import ParallaxGallery from '@/components/ParallaxGallery'
 import HeroImg from "../../../public/images/gallery1.jpg";
 import BgImg from '../../../public/images/gallery2.jpg';
 import PerspectiveTransition from '@/components/PerspectiveSection/PerspectiveTransition'
 import Testimonials from '@/components/Testimonials'
 import HomeAboutSection from '@/components/HomeAboutSection/page'
-import Home from '@/components/Header'
+
 
 export default async function HomePage() {
   const { isEnabled: isDraftMode } = await draftMode()
