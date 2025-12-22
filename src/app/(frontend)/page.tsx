@@ -37,9 +37,9 @@ export default async function HomePage() {
 
   const perspectiveContent = (
     <>
-      <p>Scroll Perspective</p>
+      <p>Moments That Last </p>
       <div className="flex gap-4 items-center">
-        <p>Section</p>
+        <p>Forever</p>
         <div className="relative w-[12.5vw] h-[12.5vw]">
           <NextImage 
             src={HeroImg}
@@ -48,7 +48,7 @@ export default async function HomePage() {
             className="object-cover rounded-lg"
           />
         </div>
-        <p>Transition</p>
+        <p>Preserved</p>
       </div>
     </>
   );
@@ -56,8 +56,8 @@ export default async function HomePage() {
   // Hero configuration
   const heroConfig = {
     muxPlaybackId: 'MC6BiWC1UMXF5zhTNq9jrhiYZz6QSoUeB4TEUwr54Ac',
-    title: 'Welcome to the Future',
-    subtitle: 'Experience innovation like never before with cutting-edge technology',
+    title: 'Forever Starts Here',
+    subtitle: 'Dancing light, whispered vows, endless love—all captured',
   }
 
   return (
@@ -70,11 +70,12 @@ export default async function HomePage() {
       <HomeAboutSection />
        <ScrollCardsContainer projects={projects} sectionTitle="Your love story, filmed like a movie." sectionSubtitle = "Every wedding tells a unique story. We capture yours with artistry, emotion, and precision—so your memories live far beyond the day itself." />
        <Parallaxgallery/>
-       {/* Component 2: Perspective Transition */}
+       {/* Component 2: Perspective Transition with Gallery Link */}
       <PerspectiveTransition 
         section1Content={perspectiveContent}
         section2Image={BgImg}
         section1BgColor="#C72626"
+        galleryLink="/gallery"
       />
 
       <Testimonials />

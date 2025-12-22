@@ -80,7 +80,7 @@ const ScrollCardsContainer = ({
           {sectionTitle}
         </motion.h2>
         
-        <motion.p className="text-lg sm:text-xl md:text-xl lg:text-xl xl:text-2xl font-sans text-center px-4 text-center px-60 mt-4">{sectionSubtitle}</motion.p>
+        <motion.p className="text-base sm:text-xl md:text-xl lg:text-lg xl:text-2xl font-sans text-center px-4 text-center px-60 mt-4">{sectionSubtitle}</motion.p>
       </div>
 
       {/* Cards Container - positioned relative with higher z-index */}
@@ -100,6 +100,8 @@ const ScrollCardsContainer = ({
           )
         })}
       </div>
+
+     
     </section>
   )
 }

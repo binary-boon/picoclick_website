@@ -70,14 +70,17 @@ export default function ParallaxGallery() {
 
   return (
     <div className={styles.container}>
+      
       <div className={styles.spacer}></div>
+      <div className='bg-red-600 text-center z-30'><h1 className='  text-white mt-4 mb-4  text-3xl text-center '> Some Moments Deserve the World</h1> </div>
+
       <div ref={gallery} className={styles.gallery}>
         <Column images={[images[0], images[1], images[2]]} y={y} />
         <Column images={[images[3], images[4], images[5]]} y={y2} />
         <Column images={[images[6], images[7], images[8]]} y={y3} />
         <Column images={[images[9], images[10], images[11]]} y={y4} />
       </div>
-      <div className={styles.spacer}></div>
+      <div className={styles.spacer}><div className=' bg-red-600 text-center z-30 mt-6'><h3 className='py-4 text-2xl'>Captured through our lens, shared across the world</h3> <button className='inline-block bg-white font-heading ' ><a href="/socialmedia" style={{color:"black", padding:"10px 20px", fontSize:"2rem",  }} >Visit Social Media</a> </button></div></div>
     </div>
   );
 }

@@ -385,19 +385,19 @@ export default function ContactPage() {
             <ContactInfoCard
               icon={Phone}
               title="Call Us"
-              info="+91 98765 43210"
-              link="tel:+919876543210"
+              info="+91 861 941 7029"
+              link="tel:+918619417029"
             />
             <ContactInfoCard
               icon={Mail}
               title="Email Us"
-              info="hello@picoclick.com"
-              link="mailto:hello@picoclick.com"
+              info="picoclickudr@gmail.com"
+              link="mailto:picoclickudr@gmail.com"
             />
             <ContactInfoCard
               icon={MapPin}
               title="Visit Us"
-              info="Mumbai, Maharashtra"
+              info="City center, 220, Ashok Nagar Main Rd, Near Maya Misthan, Shakti Nagar, Udaipur, Rajasthan 313001"
               link="#map"
             />
             <ContactInfoCard
@@ -529,41 +529,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="px-6 md:px-12 lg:px-24 pb-20">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="max-w-7xl mx-auto"
-        >
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-sans font-light text-stone-900 mb-4">
-              Visit Our <span className="text-rose-600 italic font-normal">Studio</span>
-            </h2>
-            <p className="text-stone-600">
-              We'd love to meet you in person and discuss your vision over coffee
-            </p>
-          </div>
-
-          <div className="rounded-3xl overflow-hidden shadow-2xl ring-1 ring-stone-200">
-            <div className="relative w-full h-[500px]">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823277!2d72.71637344999999!3d19.08219705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="grayscale hover:grayscale-0 transition-all duration-700"
-                title="PicoClick Photography Studio Location"
-              />
-            </div>
-          </div>
-        </motion.div>
-      </section>
+    
 
       {/* FAQ Quick Links */}
       <section className="py-20 px-6 md:px-12 lg:px-24 bg-white">

@@ -94,9 +94,13 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
 export const metadata: Metadata = {
   metadataBase: new URL(getServerSideURL()),
-  openGraph: mergeOpenGraph(),
-  twitter: {
-    card: 'summary_large_image',
-    creator: '@payloadcms',
+  title: {
+    default: 'PicoClick | Luxury Wedding Photography & Films',
+    template: '%s | PicoClick'
   },
+  description: 'Luxury wedding photography and cinematography. We capture your love story with artistry, emotion, and precision—creating timeless memories that last forever.',
+  openGraph: mergeOpenGraph({
+    title: 'PicoClick | Luxury Wedding Photography & Films',
+    description: 'Luxury wedding photography and cinematography. We capture your love story with artistry, emotion, and precision—creating timeless memories that last forever.',
+  }),
 }

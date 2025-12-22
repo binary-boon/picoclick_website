@@ -2,7 +2,8 @@
 
 import { motion } from 'framer-motion';
 import { Camera, Mail, Phone, MapPin, Instagram, Facebook, Heart } from 'lucide-react';
-
+import  logo  from '../../public/picoclick_logo.png';
+import Image from 'next/image';
 interface FooterLink {
   label: string;
   href: string;
@@ -17,29 +18,28 @@ const footerSections: FooterSection[] = [
   {
     title: "Services",
     links: [
-      { label: "Wedding Photography", href: "/services/wedding" },
-      { label: "Engagement Shoots", href: "/services/engagement" },
-      { label: "Pre-Wedding", href: "/services/pre-wedding" },
-      { label: "Destination Weddings", href: "/services/destination" },
-      { label: "Albums & Prints", href: "/services/albums" }
+      { label: "Wedding Photography", href: "/about" },
+      { label: "Engagement Shoots", href: "/about" },
+      { label: "Pre-Wedding", href: "/about" },
+      { label: "Destination Weddings", href: "/about" },
+      { label: "Albums & Prints", href: "/contact" }
     ]
   },
   {
     title: "About",
     links: [
       { label: "Our Story", href: "/about" },
-      { label: "Portfolio", href: "/portfolio" },
-      { label: "Testimonials", href: "/testimonials" },
-      { label: "Awards & Features", href: "/awards" },
+      { label: "Portfolio", href: "https://www.instagram.com/picoclick/" },
+      { label: "Testimonials", href: "https://share.google/pM1ofXmkdztOZO5Ik" },
       { label: "Blog", href: "/blog" }
     ]
   },
   {
     title: "Resources",
     links: [
-      { label: "Planning Guide", href: "/resources/planning-guide" },
-      { label: "Pricing", href: "/pricing" },
-      { label: "FAQ", href: "/faq" },
+      { label: "Terms of Serve", href: "/resources/planning-guide" },
+      { label: "Cookie Policy", href: "/pricing" },
+      { label: "Privacy Policy", href: "/faq" },
       { label: "Contact", href: "/contact" },
       { label: "Terms & Privacy", href: "/terms" }
     ]
@@ -74,14 +74,14 @@ export default function Footer() {
                   whileHover={{ scale: 1.02 }}
                 >
                   <div className="w-12 h-12 rounded-full bg-gradient-to-br from-rose-500 to-amber-500 flex items-center justify-center">
-                    <Camera className="w-6 h-6 text-white" strokeWidth={1.5} />
+                    <Image alt='logo' height={100} width={100} src={logo}/>
                   </div>
                   <div>
                     <span className="block text-2xl font-heading text-white group-hover:text-rose-400 transition-colors">
                       PicoClick
                     </span>
                     <span className="block text-xs font-sans tracking-[0.2em] text-stone-400 uppercase">
-                      Photography
+                      Weddings
                     </span>
                   </div>
                 </motion.a>
@@ -163,17 +163,17 @@ export default function Footer() {
                 {[
                   {
                     icon: Mail,
-                    label: "hello@picoclick.com",
-                    href: "mailto:hello@picoclick.com"
+                    label: "bookings@picoclick.com",
+                    href: "mailto:bookings@picoclick.com"
                   },
                   {
                     icon: Phone,
-                    label: "+91 98765 43210",
-                    href: "tel:+919876543210"
+                    label: "+91 861 941 7029",
+                    href: "tel:+918619417029"
                   },
                   {
                     icon: MapPin,
-                    label: "123 Photography Lane, Mumbai, India 400001",
+                    label: "City center, 220, Ashok Nagar Main Rd, Near Maya Misthan, Shakti Nagar, Udaipur, Rajasthan 313001",
                     href: "#map"
                   }
                 ].map((contact) => (
@@ -203,7 +203,7 @@ export default function Footer() {
           >
             <div className="relative w-full h-[400px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823277!2d72.71637344999999!3d19.08219705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4502.042508456978!2d73.7047048!3d24.5861307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e566e71b2a65%3A0x6c791631058b0d14!2sPICOCLICK!5e1!3m2!1sen!2sin!4v1766400173048!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -226,7 +226,7 @@ export default function Footer() {
           >
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-stone-500 font-sans text-sm font-light">
-                © {currentYear} PicoClick Photography. All rights reserved.
+                © {currentYear} PicoClick Weddings. All rights reserved.
               </p>
               <div className="flex items-center gap-2 text-stone-500 text-sm">
                 <span className="font-sans font-light">Crafted with</span>
