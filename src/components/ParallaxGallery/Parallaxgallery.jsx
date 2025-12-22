@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import styles from './ParallaxGallery.module.scss';
+import styles from './parallaxgallery.module.scss';
 import Image from 'next/image';
 import Lenis from '@studio-freight/lenis';
 import { useTransform, useScroll, motion } from 'framer-motion';
@@ -80,7 +80,14 @@ export default function ParallaxGallery() {
         <Column images={[images[6], images[7], images[8]]} y={y3} />
         <Column images={[images[9], images[10], images[11]]} y={y4} />
       </div>
-      <div className={styles.spacer}><div className=' bg-red-600 text-center z-30 mt-6'><h3 className='py-4 text-2xl'>Captured through our lens, shared across the world</h3> <button className='inline-block bg-white font-heading ' ><a href="/socialmedia" style={{color:"black", padding:"10px 20px", fontSize:"2rem",  }} >Visit Social Media</a> </button></div></div>
+      <div className={styles.spacer}>
+        <div className=' bg-red-600 text-center z-30 mt-6'>
+          <h3 className='py-4 text-2xl'>Captured through our lens, shared across the world</h3>
+          <button className='inline-block bg-white font-heading ' >
+            <a href="/socialmedia" style={{color:"black", padding:"10px 20px", fontSize:"2rem",  }} >Visit Social Media</a> 
+            </button>
+            </div>
+            </div>
     </div>
   );
 }

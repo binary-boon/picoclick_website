@@ -23,7 +23,7 @@ const fetchVideos = async (channelId) => {
   return data.items;
 };
 
-export default function SocialMediaGallery() {
+export default function Socialmediagallery() {
   const [videos, setVideos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);

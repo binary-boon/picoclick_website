@@ -1,6 +1,6 @@
 
-import SocialMediaGallery from '@/components/SocialMediaGallery/SocialMediaGallery';
+import Socialmediagallery from '@/components/Socialmediagallery/Socialmediagallery';
 
 export default function SocialPage() {
-  return <SocialMediaGallery />;
+  return <Socialmediagallery />;
 }
