@@ -8,7 +8,7 @@ import { draftMode } from 'next/headers'
 import NextImage from 'next/image';
 import ScrollCardsContainer from '@/components/ScrollCards/ScrollCardsContainer'
 import { projects } from '../data/Projects'
-import Parallaxgallery from '@/components/ParallaxGallery/Parallaxgallery'
+import ParallaxGallery from '@/components/ParallaxGallery/ParallaxGallery'
 import HeroImg from "../../../public/images/gallery1.jpg";
 import BgImg from '../../../public/images/gallery2.jpg';
 import PerspectiveTransition from '@/components/PerspectiveSection/PerspectiveTransition'
@@ -69,7 +69,7 @@ export default async function HomePage() {
       />
       <HomeAboutSection />
        <ScrollCardsContainer projects={projects} sectionTitle="Your love story, filmed like a movie." sectionSubtitle = "Every wedding tells a unique story. We capture yours with artistry, emotion, and precision—so your memories live far beyond the day itself." />
-       <Parallaxgallery/>
+       <ParallaxGallery/>
        {/* Component 2: Perspective Transition with Gallery Link */}
       <PerspectiveTransition 
         section1Content={perspectiveContent}
