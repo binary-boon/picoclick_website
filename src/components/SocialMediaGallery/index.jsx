@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { InstagramEmbed } from 'react-social-media-embed';
-import styles from './SocialMediaGallery.module.css';
+import styles from './index.module.css';
 
 const YOUTUBE_API_KEY = 'AIzaSyCX2ri19OOXHn-6zdn3yY_CFySDzAw7G8s';
 const CHANNEL_NAME = '@picoclick2065';
