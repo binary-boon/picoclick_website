@@ -22,6 +22,7 @@
     "test:int": "cross-env NODE_OPTIONS=--no-deprecation vitest run --config ./vitest.config.mts"
   },
   "dependencies": {
+    "@mux/mux-player-react": "^3.13.0",
     "@payloadcms/admin-bar": "3.55.1",
     "@payloadcms/db-mongodb": "3.55.1",
     "@payloadcms/live-preview-react": "3.55.1",

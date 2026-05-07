@@ -15,45 +15,45 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Sarah & Michael Chen",
+    name: "Pavan Patel",
     role: "Wedding - June 2024",
-    content: "Every single photograph was a masterpiece. They captured not just moments, but emotions we didn't even know we felt. Our families still cry happy tears looking through our album.",
+    content: "I had one of the best photography sessions with Devendrabhai and his team. We reached out to them for our pre-wedding photography; it was on short notice, but they accommodated all of our needs and helped us by providing exceptional services. ",
     date: "June 15, 2024"
   },
   {
     id: 2,
-    name: "Priya & Raj Malhotra",
+    name: "Devanshi Jain",
     role: "Wedding - August 2024",
-    content: "The attention to detail was extraordinary. From the intricate mehndi designs to the grand baraat, every cultural element was beautifully documented. These photos are our greatest treasure.",
+    content: "Great Photography skills, got my parents 25th anniversary shoot done and it went great. Recommended 100 % Very cooperative. thank you pick clicks Special thanks to Dev and Pankaj",
     date: "August 22, 2024"
   },
   {
     id: 3,
-    name: "Emily & James Rodriguez",
-    role: "Wedding - September 2024",
-    content: "Working with this team felt like having friends at our wedding who just happened to be incredibly talented photographers. Natural, authentic, and absolutely stunning results.",
+    name: "Lucky Yogi",
+    role: "Wedding - September 2025",
+    content: "I had an exceptional experience with PICOCLICK photography in Udaipur. The team, led by Mr. Devendra Solanki, is highly professional and excels in capturing moments with precision. Their attention to detail and expertise make them the best in Udaipur.",
     date: "September 8, 2024"
   },
   {
     id: 4,
-    name: "Aisha & Omar Hassan",
+    name: "Akshay Kinni",
     role: "Wedding - October 2024",
-    content: "They understood our vision perfectly and brought it to life in ways we never imagined. The golden hour shots are ethereal, and the candid moments are pure magic.",
-    date: "October 12, 2024"
+    content: "My wife and I did a photoshoot as part of our first year wedding anniversary, and the pictures looked absolutely stunning. We’ve worked with many photographers over the years, and this was exceptional and a standout. ",
+    date: "October 12, 2023"
   },
   {
     id: 5,
-    name: "Jessica & David Park",
-    role: "Wedding - November 2024",
-    content: "From our engagement shoot to the big day, every session was a joy. The photos are timeless, elegant, and capture our love story in the most beautiful way possible.",
-    date: "November 3, 2024"
+    name: "Pranjali Chauhan",
+    role: "Wedding - January 2024",
+    content: "An absolutely amazing team. Very polite team who tries to understand your requirements, captures all important moments, does not interfere between ceremonies and creates a very fun environment during photoshoots.",
+    date: "January 3, 2024"
   },
   {
     id: 6,
-    name: "Sophia & Lucas Martinez",
-    role: "Wedding - December 2024",
-    content: "Simply phenomenal. The way they played with light and shadow, the composition, the raw emotion captured in every frame - this is art at its finest. Worth every penny and more.",
-    date: "December 1, 2024"
+    name: "Ridham Joshi",
+    role: "Wedding - October 2023",
+    content: "Picoclick photography is one of the best photography in udaipur.We have done pre wedding shoot with devendra bhaiya & his team, which we liked very much.He captured each & every picture with passion and friendly nature.",
+    date: "October 15, 2023"
   }
 ];
 

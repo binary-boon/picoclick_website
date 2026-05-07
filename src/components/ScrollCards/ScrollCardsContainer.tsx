@@ -11,6 +11,10 @@ export interface Project {
   src: string
   link: string
   color: string
+  slug?: string
+  type?: 'video' | 'image'
+  galleryImages?: string[]
+  videoPlaybackIds?: string[]
 }
 
 interface ScrollCardsContainerProps {
@@ -19,35 +23,28 @@ interface ScrollCardsContainerProps {
   sectionSubtitle?: string
 }
 
-const ScrollCardsContainer = ({ 
-  projects, 
-  sectionTitle  ,
-  sectionSubtitle 
+const ScrollCardsContainer = ({
+  projects,
+  sectionTitle,
+  sectionSubtitle,
 }: ScrollCardsContainerProps) => {
   const sectionRef = useRef(null)
   const [isMobile, setIsMobile] = useState(false)
-  
+
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ['start start', 'end end'],
   })
 
-  // Title fades out when section is about to end
   const titleOpacity = useTransform(scrollYProgress, [0, 0.85, 1], [1, 1, 0])
 
-  // Detect mobile/tablet
   useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 1024)
-    }
-    
+    const checkMobile = () => setIsMobile(window.innerWidth < 1024)
     checkMobile()
     window.addEventListener('resize', checkMobile)
-    
     return () => window.removeEventListener('resize', checkMobile)
   }, [])
 
-  // Initialize Lenis smooth scroll
   useEffect(() => {
     const lenis = new Lenis({
       duration: isMobile ? 1.0 : 1.2,
@@ -63,27 +60,24 @@ const ScrollCardsContainer = ({
     }
 
     requestAnimationFrame(raf)
-
-    return () => {
-      lenis.destroy()
-    }
+    return () => lenis.destroy()
   }, [isMobile])
 
   return (
     <section ref={sectionRef} className="relative">
-      {/* Sticky Title - stays at top, behind cards */}
       <div className="sticky top-0 left-0 w-full z-0 pt-20 sm:pt-24 lg:pt-32 pb-8 sm:pb-12 lg:pb-16 bg-background">
-        <motion.h2 
+        <motion.h2
           style={{ opacity: titleOpacity }}
-          className="text-2xl sm:text-2xl md:text-3xlxl lg:text-4xl xl:text-5xl font-heading text-center px-4"
+          className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-heading text-center px-4"
         >
           {sectionTitle}
         </motion.h2>
-        
-        <motion.p className="text-base sm:text-xl md:text-xl lg:text-lg xl:text-2xl font-sans text-center px-4 text-center px-60 mt-4">{sectionSubtitle}</motion.p>
+
+        <motion.p className="text-base sm:text-xl md:text-xl lg:text-lg xl:text-2xl font-sans text-center px-4 sm:px-60 mt-4">
+          {sectionSubtitle}
+        </motion.p>
       </div>
 
-      {/* Cards Container - positioned relative with higher z-index */}
       <div className="relative z-10">
         {projects.map((project, i) => {
           const targetScale = isMobile ? 0.9 : 1 - (projects.length - i) * 0.05
@@ -100,8 +94,6 @@ const ScrollCardsContainer = ({
           )
         })}
       </div>
-
-     
     </section>
   )
 }
